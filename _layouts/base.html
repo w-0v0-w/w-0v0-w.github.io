@@ -1,0 +1,27 @@
+---
+---
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>{{page.title}}</title>
+        <meta charset=utf-8>
+        <link rel=stylesheet href={{'src/css/main.css'|relative_url}}>
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                {% include header.html %}
+            </header>
+            <main>
+            {{ content }}
+            </main>
+            <footer>
+                {% include footer.html %}
+            </footer>
+
+        </div>
+        <img id="overlay" src="{{'src/img/huntress.webp'|relative_url}}" alt="The Huntress from Dead by Daylight">
+        <canvas id="canvas"></canvas>
+        <script src="{{'src/js/rain.js'|relative_url}}" charset="utf-8"></script>
+    </body>
+</html>

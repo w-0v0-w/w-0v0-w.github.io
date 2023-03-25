@@ -1,0 +1,41 @@
+/*
+    This is a general two-column grid;
+*/
+.two_grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "col1 col2";
+}
+.two_grid .col_1 { grid-area: col1; padding: 10px; }
+.two_grid .col_2 { grid-area: col2; padding: 10px; }
+@media only screen and (max-width: 800px) {
+    .two_grid { grid-template-areas: "col1 col1" "col2 col2"; }
+    .two_grid .col_1 { border: none; padding: 10px; }
+    .two_grid .col_1 { padding: 10px; }
+}
+
+/***/
+
+#canvas {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: .2;
+}
+
+#overlay {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: auto;
+}

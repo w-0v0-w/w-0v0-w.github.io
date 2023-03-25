@@ -1,0 +1,30 @@
+
+@import "root.css";
+@import "extra.css";
+
+/* ---- */
+
+body {
+    color: var(--font-color);
+    background: var(--bg-color);
+    background-size: cover;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: cursive, monospace, sans-serif;
+}
+
+#page {
+    background: var(--page-color);
+
+    min-height: 100px;
+    width: 80%;
+
+    margin-top: 5em;
+
+    padding: 10px;
+
+    border: black 5px double;
+}
